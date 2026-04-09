@@ -25,7 +25,7 @@
             color: #ffffff;
             text-align: left;
         }
-        
+
 
         p {
             color: #ffffff;
@@ -66,8 +66,39 @@
             height: 60vh;
             text-align: center;
         }
-        .hero p{
+
+        .hero p {
             font-size: 22px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+        .card {
+            background-color: #16213e;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #ffffff20;
+        }
+
+        .card h3 {
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #aaaaaa;
+            font-size: 14px;
+            padding-left: 0;
+        }
+
+        .card span {
+            font-size: 12px;
+            color: #4fc3f7;
         }
     </style>
 </head>
@@ -117,11 +148,24 @@
     <div id="projects">
         <div class="Right">
             <h2>Projects</h2>
-            <ul>
-                <li>Student result management system (c)</li>
-                <li>Portfolio (HTML)</li>
-                <li>library management system(c++)</li>
-            </ul>
+            <div class="project-grid">
+                <div class="card">
+                    <h3>Student Result Management</h3>
+                    <p>A C program to manage and display student result.</p>
+                    <span>C</span>
+                </div>
+                <div class="card">
+                    <h3>Portfolio website</h3>
+                    <p>Personal portfolio built with HTML and CSS.</p>
+                    <span>HTML . CSS</span>
+                </div>
+                <div class="card">
+                    <h3>Library Management System</h3>
+                    <p>C++ program to manage Books , members and records.</p>
+                    <span>C++</span>
+                </div>
+
+            </div>
             <br>
         </div>
     </div>
